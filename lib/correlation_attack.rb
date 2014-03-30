@@ -1,5 +1,8 @@
+# encoding: utf-8
+
 require 'correlation_attack/version'
 require 'correlation_attack/linear_feedback_shift_register'
+require 'correlation_attack/linear_feedback_shift_register/combinator/dsl'
 require 'correlation_attack/linear_feedback_shift_register/combinator'
 require 'correlation_attack/stream_cipher'
 require 'correlation_attack/refinements/integer'

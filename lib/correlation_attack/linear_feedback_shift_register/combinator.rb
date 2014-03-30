@@ -1,4 +1,4 @@
-require 'correlation_attack/linear_feedback_shift_register/combinator/dsl'
+# encoding: utf-8
 
 module CorrelationAttack
   class LinearFeedbackShiftRegister

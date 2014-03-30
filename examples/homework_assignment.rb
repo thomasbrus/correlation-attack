@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'correlation_attack'
 using CorrelationAttack::Refinements::Integer
 
