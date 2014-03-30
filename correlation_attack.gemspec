@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = CorrelationAttack::VERSION
   spec.authors       = ["Thomas Brus"]
   spec.email         = ["thomas.brus@me.com"]
-  spec.homepage         = "http://github.com/thomasbrus/correlation-attack"
-  spec.summary       = "Various methods for executing a correlation attack"
+  spec.homepage      = "http://github.com/thomasbrus/correlation-attack"
+  spec.summary       = "Nice DSL for executing correlation attacks"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

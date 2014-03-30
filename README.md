@@ -1,4 +1,8 @@
-# CorrelationAttack
+# correlation_attack
+
+This gem provides a handy DSL for executing correlation attacks.
+
+## Introduction
 
 ...
 
@@ -14,7 +18,8 @@ And then execute:
 
 ## Supported Ruby versions
 
-This gem requires **Ruby 2.0.0+** since it uses refinements.
+This gem uses [refinements](http://www.ruby-doc.org/core-2.1.0/doc/syntax/refinements_rdoc.html),
+so **Ruby 2.0.0+** is required
 
 ## Usage
 
