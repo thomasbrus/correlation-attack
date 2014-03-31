@@ -3,6 +3,7 @@
 module CorrelationAttack
   module Refinements
 
+    # Defines refinements for the Ruby core class Integer.
     module Integer
       refine ::Integer do
         def bit_length
