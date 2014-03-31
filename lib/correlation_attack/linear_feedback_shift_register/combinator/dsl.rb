@@ -6,10 +6,12 @@ module CorrelationAttack
 
       # Provides a nice interface for building LFSR combinators.
       module DSL
+        # Hook which adds class methods when included.
         def self.included(base)
           base.extend(ClassMethods)
         end
 
+        # Convenience methods for instantiating a LinearFeedbackShiftRegister::Combinator.
         module ClassMethods
           # Builds a new Combinator which is configured by the supplied block.
           # @yield [generator] a yet to be configured Combinator instance

@@ -6,11 +6,12 @@ require 'correlation_attack/linear_feedback_shift_register/combinator/dsl'
 require 'correlation_attack/linear_feedback_shift_register/combinator'
 require 'correlation_attack/stream_cipher'
 require 'correlation_attack/refinements/integer'
+require 'correlation_attack/refinements'
 
 # Contains two convenience methods for executing a
 # {http://en.wikipedia.org/wiki/Correlation_attack correlation attack}.
 module CorrelationAttack
-  using Refinements::Integer
+  using Refinements
 
   # Guesses the key of an LFSR, given a known keystream produced by an LFSR combinator.
   # @note This will only result in a correct key if the LFSR is correlated to
