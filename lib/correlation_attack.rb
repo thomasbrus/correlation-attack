@@ -41,14 +41,14 @@ module CorrelationAttack
     }.min_by(&:last).first
   end
 
-  # Brute forces a key by comparing the output of a user supplied LFSR combinator
+  # Brute forces a key by comparing the output of a user-supplied LFSR combinator
   # against the known keystream.
   # @example
   #   # Given an LFSR of which the key is known, and one of which the key is unknown...
   #   solved_lfsr = CorrelationAttack::LinearFeedbackShiftRegister.new(4, 0b1000, 0b1101)
   #   unsolved_lfsr = CorrelationAttack::LinearFeedbackShiftRegister.new(4, 0b1110)
   #
-  #   # And given an intercepted or guess keystream...
+  #   # And given an intercepted or guessed keystream...
   #   known_keystream = 0b10010111011100001100110001000100110101011100010111000011
   #
   #   # Find the key by building the LFSR combinator from the solved LFSR and a proposed LFSR.
@@ -79,8 +79,8 @@ module CorrelationAttack
       lfsr_combinator = yield(lfsr.reset(key))
 
       # Generate a bit sequence from this lfsr combinator
-      kk_length = known_keystream.bit_length
-      generated_keystream = lfsr_combinator.generate_bit_sequence(kk_length)
+      keystream_length = known_keystream.bit_length
+      generated_keystream = lfsr_combinator.generate_bit_sequence(keystream_length)
 
       # Return the current key if there is a match
       known_keystream == generated_keystream
