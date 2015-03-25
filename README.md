@@ -27,4 +27,4 @@ so **Ruby 2.0.0+** is required
 
 ## Example
 
-...
+See [examples/homework_assignment.rb](examples/homework_assignment.rb)
